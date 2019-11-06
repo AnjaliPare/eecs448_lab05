@@ -5,6 +5,7 @@
  if(empty($username))
  {
    echo "You cannot leave the text field blank";
+   echo "<br><a href='AdminHome.html'>Admin Home </a>";
  }
  else
  {
@@ -18,9 +19,11 @@
      if ($mysqli->query($query))
      {
        echo "New User Created successfully";
+       echo "<br><a href='AdminHome.html'>Back to Admin Home </a>";
      }
      else {
        echo "This user already exists";
+       echo "<br><a href='AdminHome.html'>Back to Admin Home </a>";
      }
      $mysqli->close();
  }
